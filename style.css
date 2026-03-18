@@ -1,3 +1,15 @@
- p{
-        color: blue
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+p{
+    color: red;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+
+    #paragrafo1{
+
+        font-weight: bold;
+
     }
