@@ -1,6 +1,19 @@
-p{
+.display-block{
 
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #000
+    display: block;
+    height:  200px;
+    background-color:  blue;
+    border: 1px solid #000;
+
 }
+
+.display-inline{
+
+     display: inline;
+    background-color:  green;
+    border: 1px solid #000;
+
+
+}
+
+ 
