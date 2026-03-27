@@ -1,7 +1,7 @@
 .conteiner{
 
 background-color: lightsalmon;
-display: flex;
+display: inline-flex
 }
 
 
@@ -10,4 +10,6 @@ display: flex;
 background-color:  lightblue;
 border: 1px solid black ;
 flex: auto;
+padding:  30px;
+margin: 10px;
 }
