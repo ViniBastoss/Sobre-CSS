@@ -9,5 +9,5 @@ display: flex;
 
 background-color:  lightblue;
 border: 1px solid black ;
-
+flex: auto;
 }
