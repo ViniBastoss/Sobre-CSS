@@ -8,6 +8,7 @@ body { margin: 0; font-family: sans-serif; }
    display: flex;
     justify-content: space-between; /* Espalha horizontalmente (Show!) */
     align-items: center; /* A MÁGICA NO CROSS-AXIS! */
+    flex-direction: row;
  
 
 }
