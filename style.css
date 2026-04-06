@@ -14,8 +14,8 @@ header{
 main{
     display:grid ;
     grid-template-columns: repeat(auto-fit,minmax(300px,4fr));
-    gap: 20px;
-    padding: 2px;
+    gap: 10px;
+    padding: 10px;
     
 
 }
