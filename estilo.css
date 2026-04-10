@@ -1,0 +1,26 @@
+/* CSS */
+body {
+    background-color: #0b131e; /* Sua paleta dark */
+    display: flex; justify-content: center; align-items: center; height: 100vh;
+}
+
+.moldura-personagem {
+    width: 250px;
+    height: 300px;
+    background-color: rgba(0, 229, 255, 0.1); /* Ciano transparente */
+    border: 3px solid #00e5ff; /* Ciano brilhante */
+    
+    /* 1. A MÁGICA DA FORMA: Clip-path de hexágono */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    
+    /* 2. O Efeito Neon Glow */
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
+    filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.4));
+    
+    display: flex; justify-content: center; align-items: flex-end;
+    overflow: hidden;
+}
+
+.moldura-personagem img {
+    height: 95%; /* Ajusta a imagem do personagem */
+}
