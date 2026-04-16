@@ -1,4 +1,4 @@
-const convidados = ["Sheila","Vinicius","Cleyton"];
+const carros = ["Uno","Fusca","Scort","Gol"];
 
-convidados[convidados.length] = "Paulo"
-console.log(convidados)
+const conteudo = document.getElementById("conteudo");
+ 
