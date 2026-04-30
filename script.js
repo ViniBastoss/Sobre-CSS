@@ -1,20 +1,20 @@
-// Fazer a exibição de uma lista de carros de forma eficiente usando HTML!!
+const name = document.getElementById("name").value;
+const email = document.getElementById("email.").value;
+const message = document.getElementById("message").value;
 
-const carros = ["Uno","Gol","Maréa","HB20"]; //Lista de carros
-
-const conteudo = document.getElementById("conteudo") // Fazendo a chamada do elemento "conteudo" do nossso DOM
-let dados = ""; // variáel que vai armazenar nossa lista na memoória do JS.
-
-let i = 0; //Nosso contador que ficará responsavel pelo loop enquanto o tamanho da lista não for atingido
-
-while(i < carros.length){  // Responsavel pela a ação enquanto a condição for possivel dentro do proposto
-
-    dados += "<p>"+ carros[i] + "</p>";
-
-    i++;
-
+if(name === '' || email === '' || message === ''){
+    alert("Todos os campos são obrigatórios");
+    return false;
 }
 
-const secao = document.createElement("div"); // Criando um elemento que será enviado para nosso DOM junto á nossa lista.
-secao.innerHTML = ("<h2>Loop da lista </h2>")+dados; //Empacotando tudo que foi colocado dentro da variável dados e á enviado á seção.
-conteudo.append(secao); // comando que permite que nossa variável conteudo(div) receba o pacote da nossa lista.
+if(name.length < 3 || name.length > 50){
+    alert("O texto deve ter entre 3 e 50 caracteres.");
+    return false;
+}
+
+if(email.length < 3 || email.length > 50){
+    alert("O email deve ter entre 5 e 50 caracteres.");
+    return false;
+}
+
+const emailPartern = ;
