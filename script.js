@@ -1,5 +1,7 @@
+function validateForm(){
+
 const name = document.getElementById("name").value;
-const email = document.getElementById("email.").value;
+const email = document.getElementById("email").value;
 const message = document.getElementById("message").value;
 
 if(name === '' || email === '' || message === ''){
@@ -17,4 +19,16 @@ if(email.length < 3 || email.length > 50){
     return false;
 }
 
-const emailPartern = ;
+const emailPatern =  /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+if(!emailPatern.test(email)){
+     alert("Por favor, insira um valor de email valido");
+    return false;
+}
+return true;
+}
+document.getElementById("contactForm").addEventListener("submit", function(event){
+    event.preventDefault();
+    if(validateForm()){
+        alert("Formulário validado!")
+    }
+})
